@@ -1,0 +1,27 @@
+// Лого хедера
+.logo {
+    display: block;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+
+&__web {
+    color: $link-color;
+}
+
+&__studio {
+    color: $studio-nav-color;
+}
+
+// лого футера
+&__studio--inverse {
+    color: $background-color;
+}
+
+&--indentation {
+    margin-bottom: 20px;
+}
+}

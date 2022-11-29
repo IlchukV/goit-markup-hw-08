@@ -1,0 +1,38 @@
+.works {
+    padding-bottom: 94px;
+    padding-top: 0;
+}
+
+.work {
+& .work__item+.work__item {
+        margin-left: 30px;
+    }
+
+&__container {
+    position: relative;
+}
+
+&__image {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+&__label {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $background-color;
+    background-color: $label-bg-collor;
+}
+}

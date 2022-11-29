@@ -1,0 +1,40 @@
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+&__input {
+    /* Візуально приховуємо чекбокс */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+&__label {
+    display: inline-block;
+    margin-right: 10px;
+
+    width: 15px;
+    height: 15px;
+    border: 2px solid $text-color;
+    border-radius: 4px;
+}
+
+&__input:checked+&__label {
+    background-color: $link-color;
+    background-image: url('../images/check-mark.png');
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $link-color;
+}
+
+&__link {
+    color: $link-color;
+}
+}

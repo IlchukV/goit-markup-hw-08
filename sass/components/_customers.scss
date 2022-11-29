@@ -1,0 +1,42 @@
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+
+&__list {
+    display: flex;
+    padding: 0 0;
+    margin: 0;
+    background-color: $background-color;
+}
+
+&__item {
+    margin-right: 30px;
+
+    &:last-child {
+            margin-right: 0;
+        }
+}
+
+&__link {
+    display: flex;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    width: 170px;
+    height: 92px;
+    fill: $actions-team-color;
+    background-color: $background-color;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $actions-team-color;
+    border-radius: 4px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            fill: $link-color;
+            border-color: $link-color;
+        }
+}
+}

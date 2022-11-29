@@ -1,0 +1,66 @@
+.form {
+    width: 528px;
+    height: 581px;
+
+&__field {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+&__icon {
+    position: absolute;
+    left: 15px;
+    top: 42px;
+}
+
+&__comment {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.comment__area {
+    padding: 6px 15px;
+
+    border: 1px solid $border-collor;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+&__field input {
+    margin: 0;
+    padding: 6px 35px;
+    margin-bottom: 10px;
+
+    height: 40px;
+
+    border: 1px solid $border-collor;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+&__field:focus-within>&__icon {
+    fill: $link-color;
+}
+
+&__field:focus-within>&__input {
+    outline: 1px solid $link-color;
+}
+
+&__comment:focus-within>.comment__area {
+    outline: 1px solid $link-color;
+}
+
+&__field label {
+    margin-bottom: 4px;
+}
+
+&__field input::placeholder {
+    color: $placeholder-collor;
+}
+}

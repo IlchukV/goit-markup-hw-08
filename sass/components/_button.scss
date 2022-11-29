@@ -1,0 +1,58 @@
+// Кнопка Замовити послугу
+.button {
+    padding: 10px 32px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    background-color: $link-color;
+    border: none;
+    border-radius: 4px;
+    color: $background-color;
+    cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    background-color: $main-button-color;
+    box-shadow: 0px 4px 4px $box-shadow;
+    border-radius: 4px
+}
+
+
+// Кнопка підписатися
+
+&--decorated {
+    display: flex;
+    position: relative;
+    margin-left: 12px;
+    padding: 10px 26px;
+
+    width: 200px;
+    align-items: center;
+    text-align: center;
+
+.button &::after {
+        display: flex;
+        content: "";
+        margin-left: 10px;
+    }
+}
+
+&--resizing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 200px;
+    height: 50px;
+}
+}

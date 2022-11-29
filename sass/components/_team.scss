@@ -1,0 +1,48 @@
+.teams {
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+    background-color: $backgraund-team-color;
+}
+
+.team  {
+
+&__card {
+    margin-top: 0;
+
+    background-color: $background-color;
+    box-shadow: 0px 1px 3px $box-shadow, 0px 1px 1px $drop-shadow-color, 0px 2px 1px $box-shadow-modal;
+    border-radius: 0px 0px 4px 4px;
+
+.team &+& {
+            margin-left: 30px;
+        }
+}
+
+&__image {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+&__name {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: $text-color;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+&__position {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: $text-main-color;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+}
