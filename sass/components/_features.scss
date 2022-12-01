@@ -24,13 +24,28 @@
 
 .feature {
 
-&__item {
-    display: block;
-    margin-right: 30px;
+    display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 0;
+        display: 100%;
+        margin: -15px;
 
-    &:nth-child(4n) {
-            margin-right: 0;
+
+&__item {
+
+    margin: 15px;
+    
+        width: calc(100% - 2 * 15px) / 1;
+    
+        @media screen and (min-width: 768) {
+            width: calc(100% - 4 * 15px) / 2;
+         }
+    
+        @media screen and (min-width: 1200) {
+            width: calc(100% - 8 * 15px) / 4;
         }
+    
 }
 
 &__container {
@@ -38,11 +53,20 @@
     align-items: center;
     justify-content: center;
 
-    width: 270px;
+    width: 450px;
     height: 120px;
 
     background-color: $backgraund-team-color;
     border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+            width: 354px;
+    
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+        }
 }
 
 &__title {
@@ -58,7 +82,9 @@
 }
 
 &__text {
+    display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
+    
 }
 }

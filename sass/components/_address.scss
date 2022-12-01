@@ -2,12 +2,20 @@
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+            text-align: left;
+            margin-bottom: 0;
+        }
+    
 
 &__list {
     padding: 0;
     margin: 0;
     list-style: none;
-
+    
     & a {
             color: $link-footer-color;
             text-decoration: none;

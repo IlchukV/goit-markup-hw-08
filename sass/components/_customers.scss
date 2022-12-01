@@ -5,17 +5,29 @@
 
 &__list {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0 0;
-    margin: 0;
+    display: 100%;
     background-color: $background-color;
+    margin: -15px;
+    
 }
 
 &__item {
-    margin-right: 30px;
+    margin: 15px;
+    width: calc(100% - 4 * 15px) / 2;
+    
+@media screen and (min-width: 768) {
+width: calc(100% - 12 * 15px) / 6;
+ 
+    
+}   
 
-    &:last-child {
-            margin-right: 0;
-        }
+@media screen and (min-width: 1200) {
+width: calc(100% - 6 * 15px) / 3;
+ }
+
 }
 
 &__link {

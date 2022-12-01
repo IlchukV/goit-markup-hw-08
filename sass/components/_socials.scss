@@ -1,12 +1,22 @@
 .socials {
     display: block;
-    margin-left: 70px;
+    margin: auto;
+    margin-bottom: 60px;
+    
+@media screen and (min-width: $tablet) {
+    
+  }
 
+    @media screen and (min-width: $desktop) {
+        margin-left: 94px;
+        
+      }
 
 
 &__title {
     margin-bottom: 20px;
     margin-top: 16px;
+    text-align: center;
 
     font-weight: 700;
     font-size: 14px;
@@ -15,5 +25,9 @@
 
     text-transform: uppercase;
     color: $background-color;
+
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+      }
 }
 }

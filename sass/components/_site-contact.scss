@@ -1,23 +1,55 @@
 .site-contact {
-    display: flex;
-    margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+            display: block;
+            padding-top: 21px;
+            padding-left: 0;
+            margin-left: 80px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            display: flex;
+            margin-left: auto;
+            padding: 0;
+        }
+    
 
 
 &__item {
-    display: inline-flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    @media screen and (min-width: $tablet) {
+            display: block;
+            margin: 0;
+            padding-bottom: 10px;
+            
+                align-items: center;
+                justify-content: center;
+            
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 1.2;
+                letter-spacing: 0.02em
+        }
+                @media screen and (min-width: $desktop) {
+                    display: inline-flex;
+                        align-items: center;
+                        padding-top: 32px;
+                        padding-bottom: 32px;
+                    
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 1.2;
+                        letter-spacing: 0.02em;
+                }
+    
 }
 
 /* Робимо лівий margin для всіх елементів окрім першого */
-& &__item+&__item {
-    margin-left: 50px;
+@media screen and (min-width: $desktop) {
+    & &__item+&__item {
+            margin-left: 50px;
+        }
 }
 
 &__link {

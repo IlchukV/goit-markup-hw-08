@@ -1,12 +1,10 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-
-    height: 600px;
-    max-width: 1600px;
+  
+    margin: 0 auto;
+    height: 400px;
+    max-width: 480px;
+    
+    padding-top: 118px;
     text-align: center;
 
     background-repeat: no-repeat;
@@ -16,17 +14,33 @@
             $hero-background-image),
         url("../images/herobackgraund.jpg");
 
+        @media screen and (min-width: $tablet) {
+                
+                max-width: 768px;
+            }
+
+        @media screen and (min-width: $desktop) {
+            max-width: 1600px;
+            height: 600px;
+            }
+
 
 &__title {
     margin-bottom: 30px;
     margin-top: 0;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: $background-color;
+
+    @media screen and (min-width: $desktop) {
+            font-weight: 900;
+                font-size: 44px;
+                line-height: 1.4;
+        }
 }
 }

@@ -17,15 +17,6 @@ body {
     letter-spacing: 0.03em;
     color: $text-main-color;
 
-// @media screen and (min-width: 480px) {
-//         width: 480px;
-
-//     }
-
-//         @media screen and (min-width: 768px) {
-//             width: 768px;
-    
-//         }
 }
     
 
@@ -33,31 +24,62 @@ body {
 textarea {
     resize: none;
 }
+
 .container {
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+   
     margin: 0 auto;
+    align-items: center;
+
+    @media screen and (min-width: $mobile) {
+          width: $mobile;
+
+    @media screen and (min-width: $tablet) {
+            width: $tablet;
+            
+    }
+    @media screen and (min-width: $desktop) {
+            width: $desktop;
+            max-width: 1200px;
+                padding-left: 15px;
+                padding-right: 15px;
+                
+                
+}
+}
+
 }
 
 .container--flex {
-    display: flex;
-    align-items: center;
+
+    @media screen and (min-width: $tablet) {
+            display: flex;
+        }
+
+    @media screen and (min-width: $desktop) {
+          
+            }
+    
 }
 
 .container ul {
     list-style: none;
 }
 
-.underline {
-    display: block;
-}
 
 .list {
-    display: flex;
-    align-items: baseline;
-    padding: 0;
-    margin: 0;
+@media screen and (min-width: $tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+        
+    }
+
+    @media screen and (min-width: $desktop) {
+            display: flex;
+            align-items: baseline;
+        }
+
+        
+    
 }
 
 .section {

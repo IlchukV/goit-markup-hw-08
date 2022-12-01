@@ -27,14 +27,18 @@
 // Кнопка підписатися
 
 &--decorated {
+    
     display: flex;
     position: relative;
-    margin-left: 12px;
+    margin: 0 auto;
     padding: 10px 26px;
-
     width: 200px;
     align-items: center;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+            margin-left: 12px;
+        }
 
 .button &::after {
         display: flex;

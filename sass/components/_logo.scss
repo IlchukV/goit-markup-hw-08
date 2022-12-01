@@ -1,12 +1,21 @@
 // Лого хедера
 .logo {
     display: block;
+    padding: 15px 16px;
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
     text-decoration: none;
+
+    @media screen and (min-width: $desktop) {
+       
+            font-size: 26px;
+            line-height: 1.2;
+            padding: 0;
+    
+        }
 
 &__web {
     color: $link-color;
@@ -22,6 +31,14 @@
 }
 
 &--indentation {
-    margin-bottom: 20px;
-}
+margin-bottom: 28px;
+text-align: center;
+
+
+    @media screen and (min-width: $desktop) {
+            margin-bottom: 20px;
+            text-align: left;
+            }
+        }
+    
 }

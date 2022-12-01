@@ -1,7 +1,12 @@
 .works {
     padding-bottom: 94px;
     padding-top: 0;
+
+@media screen and (max-width: 1199px) {
+    display: none;
+
 }
+}   
 
 .work {
 & .work__item+.work__item {
