@@ -1,17 +1,22 @@
 .teams {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 
     background-color: $backgraund-team-color;
+
+    @media screen and (min-width: $desktop) {
+            padding-bottom: 94px;
+                padding-top: 94px;
+    
+        }
 }
 
 .team  {
 
-    // display: flex;
-    // flex-wrap: wrap;
-    //     padding: 0 0;
-    //     display: 100%;
-        
+    display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 0;        
         margin: -15px;  
 
 &__card {
@@ -20,21 +25,18 @@
     width: calc(100% - 2 * 15px) / 1;
     
     @media screen and (min-width: $tablet) {
-            width: calc(100% - 4 * 15px) / 2;
-       
+       width: 354px;
         }
     
     @media screen and (min-width: $desktop) {
-            width: calc(100% - 8 * 15px) / 4;
+            width: 270px;
         }
 
     background-color: $background-color;
     box-shadow: 0px 1px 3px $box-shadow, 0px 1px 1px $drop-shadow-color, 0px 2px 1px $box-shadow-modal;
     border-radius: 0px 0px 4px 4px;
 
-.team &+& {
-            margin-left: 30px;
-        }
+
 }
 
 &__image {

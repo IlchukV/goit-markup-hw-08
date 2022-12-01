@@ -1,20 +1,46 @@
-.section {
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
+
  .filter {
- 
+   
+ &__container {
+   width: 370px;
+   margin-left: 15px;
+
+
+    @media screen and (min-width: $tablet) {
+            width: $tablet;
+            justify-content: center;
+        }
+    
+        @media screen and (min-width: $desktop) {
+        width: $desktop;
+    
+        }
+ }
+
 &__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: start;
     padding: 0;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 50px;
+            
+        }
 }
 
 &__list button {
 
     padding: 6px 22px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 
     background-color: $backgraund-team-color;
     font-weight: 500;
@@ -41,4 +67,13 @@
 &__item:nth-child(5n) {
     margin-right: 0;
 }
+
+// &__item:nth-child(3n) {
+//     margin-right: 150px;
+// }
+
+// @media screen and (min-width: $tablet) {
+//     margin-right: 0;
+// }
+
 }

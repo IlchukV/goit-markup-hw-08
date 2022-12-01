@@ -9,6 +9,7 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     
         }
 }

@@ -1,11 +1,16 @@
 .features {
 
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
   
 
     font-size: 14px;
     line-height: 1.7;
+
+    @media screen and (min-width: $desktop) {
+            padding-bottom: 94px;
+            padding-top: 94px;
+        }
 
 
 &__title {
@@ -82,9 +87,21 @@
 }
 
 &__text {
-    display: inline-block;
+    display: flex;
+  
     margin-top: 0;
     margin-bottom: 0;
+
+    width: 450px;
+
+    @media screen and (min-width: $tablet) {
+            width: 354px;
     
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+    
+}
 }
 }
