@@ -31,6 +31,25 @@
                             href="./portfolio.html">Портфоліо</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="/contact">Контакти</a></li>
                 </ul>
+
+                <button type="button" class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                data-menu-button>
+                    <svg class="site-contact__icon" width="40px"
+                    height="40px"
+                    aria-controls="menu-container"
+                    aria-label="Перемикач мобільного меню">
+                        <use class="icon-cross" href="./images/symbol-defs.svg#icon-smartphone">
+                        </use>
+                        <use class="icon-menu" href="./images/symbol-defs.svg#icon-envelope">
+                        </use>
+                </button>
+                <div class="menu-container js-menu-container" id="menu-container" data-menu>
+                    <div class="navigation">                                       </div>
+                    <div class="contacts">
+
+                    </div>
+                </div>
             </nav>
     
             <ul class="site-contact list">
@@ -140,41 +159,60 @@
         </section>
 
 <!-- work -->
-        <section class="works">
-            <div class="container">
-                <h2 class="works__title">
+<section class="works">
+    <div class="container">
+        <h2 class="works__title">
                             Чим ми займаємося
-                </h2>
-                        <ul class="work list">
-                            <li class="work__item">
-                                <div class="work__container">
-                                    <img src="images/img1.jpg" alt="робота на клавіатурі перед монітором" class="work__image" width="370">
-                                    <p class="work__label">Десктопні додатки</p>
-                                </div>
+        </h2>
+            <ul class="work list">
+                <li class="work__item">
+                    <div class="work__container">
+                        <img class="work__image"
+                        srcset="
+                        images/img/desktop/Desktop-applications-370.jpg 370w,
+                        images/img/desktop/Desktop-applications-640.jpg 640w
+                        "
+                        src="images/img/desktop/Desktop-applications-370.jpg" alt="робота на клавіатурі перед монітором"
+                        sizes="min-width: 1200px) 25vw"
+                        >
+                        <p class="work__label">Десктопні додатки</p>
+                    </div>
                                 
                             </li>
-                            <li class="work__item">
-                                <div class="work__container">
-                                    <img src="images/img2.jpg" alt="робота на телефоны" class="work__image" width="370">
-                                    <p class="work__label">Мобільні додатки</p>
-                                </div>
+                <li class="work__item">
+                    <div class="work__container">
+                        <img class="work__image"
+                         srcset="images/img/mobile/Mobile-applications-370.jpg 370w,
+                         images/img/mobile/Mobile-applications-640.jpg 640w
+                         "
+                         src="images/img/mobile/Mobile-applications-370.jpg" alt="робота на телефоны"
+                         sizes="min-width: 1200px) 25vw"
+                         >
+                        <p class="work__label">Мобільні додатки</p>
+                    </div>
                                 
                             </li>
-                            <li class="work__item">
-                                <div class="work__container">
-                                    <img src="images/img3.jpg" alt="робота на планшеты" class="work__image" width="370">
-                                    <p class="work__label">Дизайнерські рішення</p>
+                <li class="work__item">
+                    <div class="work__container">
+                        <img class="work__image"
+                        srcset="images/img/design/Design-solutions-370.jpg 370w,
+                         images/img/design/Design-solutions-640.jpg 640w
+                         "
+                        src="images/img/design/Design-solutions-370.jpg" alt="робота на планшеті"
+                        sizes="min-width: 1200px) 25vw"
+                        >
+                        <p class="work__label">Дизайнерські рішення</p>
                                 </div>
                             </li>
                                 
-                        </ul>
+            </ul>
 
-            </div>
+    </div>
                     
         </section>
       
 <!-- team -->
-        <section class="teams">
+<section class="teams">
             <div class="container">
                 <h2 class="teams__title">
                     Наша команда
@@ -184,7 +222,16 @@
                     <!-- Team card 1 -->
 
                     <li class="team__card">
-                        <img class="team__image" src="images/img4.jpg" alt="робота на клавіатурі перед монітором" width="270">
+                        <img class="team__image"
+                        srcset="
+                        images/img/product-designer/product-designer-270.jpg 270w,
+                        images/img/product-designer/product-designer-354.jpg 354w,
+                        images/img/product-designer/product-designer-450.jpg 450w,images/img/product-designer/product-designer-540.jpg 540w,
+                        images/img/product-designer/product-designer-708.jpg 708w,
+                        images/img/product-designer/product-designer-900.jpg 900w
+                        "
+                        src="images/img/product-designer/product-designer-450.jpg" alt="робота на клавіатурі перед монітором"
+                        sizes="min-width: 1200px) 25vw, min-width: 768px) 50vw, 100vw">
                         <h3 class="team__name">Ігор Дем'яненко</h3>
                         <p class="team__position">Product Designer</p>
                         <!-- social network -->
@@ -230,7 +277,15 @@
 
                     <!-- Team card 2 -->
                     <li class="team__card">
-                        <img class="team__image" src="images/img5.jpg" alt="робота на клавіатурі перед монітором" width="270">
+                        <img class="team__image" srcset="
+                        images/img/frontend-developer/frontend-developer-270.jpg 270w,
+                        images/img/frontend-developer/frontend-developer-354.jpg 354w,
+                        images/img/frontend-developer/frontend-developer-450.jpg 450w,images/images/img/frontend-developer/frontend-developer-540.jpg 540w,
+                        images/img/frontend-developer/frontend-developer-708.jpg 708w,
+                        images/img/frontend-developer/frontend-developer-900.jpg 900w
+                        "
+                        src="images/img/frontend-developer/frontend-developer-450.jpg"
+                        alt="робота на клавіатурі перед монітором" sizes="min-width: 1200px) 25vw, min-width: 768px) 50vw, 100vw">
                         <h3 class="team__name">Ольга Рєпіна</h3>
                         <p class="team__position">Frontend Developer</p>
                         <!-- social network -->
@@ -276,7 +331,14 @@
 
                     <!-- Team card 3 -->
                     <li class="team__card">
-                        <img class="team__image" src="images/img6.jpg" alt="робота на клавіатурі перед монітором" width="270">
+                        <img class="team__image" srcset="
+                        images/img/marketing/marketing-354.jpg 354w,
+                        images/img/marketing/marketing-450.jpg 450w,images/
+                        images/img/marketing/marketing-708.jpg 708w,
+                        images/img/marketing/marketing-900.jpg 900w
+                        "
+                        src="images/img/marketing/marketing-450.jpg"
+                        alt="робота на клавіатурі перед монітором" sizes="min-width: 1200px) 25vw, min-width: 768px) 50vw, 100vw">
                         <h3 class="team__name">Микола Тарасов</h3>
                         <p class="team__position">Marketing</p>
 <!-- social network -->
@@ -322,7 +384,15 @@
 
                     <!-- Team card 4 -->
                     <li class="team__card">
-                        <img class="team__image" src="images/img7.jpg" alt="робота на клавіатурі перед монітором" width="270">
+                        <img class="team__image" srcset="
+                        images/img/ui-designer/ui-designer-270.jpg 270w,
+                        images/img/ui-designer/ui-designer-354.jpg 354w,
+                        images/img/ui-designer/ui-designer-450.jpg 450w,images/images/img/ui-designer/ui-designer-540.jpg 540w,
+                        images/img/ui-designer/ui-designer-708.jpg 708w,
+                        images/img/ui-designer/ui-designer-900.jpg 900w
+                        "
+                        src="images/img/ui-designer/ui-designer-450.jpg"
+                        alt="робота на клавіатурі перед монітором" sizes="min-width: 1200px) 25vw, min-width: 768px) 50vw, 100vw">
                         <h3 class="team__name">Михайло Єрмаков</h3>
                         <p class="team__position">UI Designer</p>
                         <!-- social network -->
@@ -370,7 +440,7 @@
         </section>
 
 <!-- customers -->
-        <section class="customers">
+<section class="customers">
             <div class="container">
                 <h2 class="customers__title">
                     Постійні клієнти
@@ -593,6 +663,7 @@
         </div>
     </footer>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

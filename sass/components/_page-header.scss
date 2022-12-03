@@ -1,5 +1,5 @@
 .page-header {
-
+position: relative;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: $border-bottom-color;
@@ -8,5 +8,73 @@
 .nav {
     display: flex;
     align-items: center;
-     
+    justify-content: space-between;
+    
+}
+// Mobile menu
+.menu-toggle {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    @media screen and (min-width: $tablet) {
+            display: none;
+        }
+    
+    & .icon-cross {
+        display: none;
+            }
+
+    &.is-open .icon-cross {
+    display: block;
+            }
+
+    &.is-open .icon-menu {
+        display: block;
+    }
+}
+.menu-container {
+    
+    
+    padding: 40px;
+    // height: 796px;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    background-color: blue;
+
+    @media screen and (max-width: 767px) {
+            display: none;
+            position: absolute;
+            
+                top: 100%;
+                left: 0;
+                width: 100%;
+
+                &.is-open {
+                        display: block;
+                    }
+    }
+
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+    
+}
+
+.navigation, .contacts {
+    height: 40px;
+    width: 50px;
+}
+
+.navigation {
+outline: 1px solid teal;
+}
+
+.contacts {
+outline: 1px solid rgb(175, 226, 23);
 }

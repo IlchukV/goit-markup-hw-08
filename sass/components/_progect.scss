@@ -6,6 +6,14 @@
         padding: 0 0;
         margin: -15px;
 
+    @media screen and (min-width: $tablet) {
+        justify-content: flex-start;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            justify-content: center;
+        }
+
 .project__item {
 
     margin: 15px;

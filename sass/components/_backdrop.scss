@@ -1,4 +1,5 @@
 .backdrop {
+    padding: 95px 30px;
     position: fixed;
     top: 0;
     left: 0;
@@ -7,6 +8,7 @@
     height: 100%;
 
     background-color: $box-shadow-modal;
+    overflow-y: scroll;
 
 
 &.is-hidden {

@@ -53,8 +53,10 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (min-width: $tablet) {}
+    @media screen and (min-width: $tablet) {
         padding: 0;
+    }
+        
     @media screen and (min-width: $desktop) {
             
             margin: 0;
