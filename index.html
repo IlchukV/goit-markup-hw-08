@@ -24,58 +24,95 @@
             <nav class="nav">
                 <a class="logo" href="./index.html"><span class="logo__web">Web</span><span
                         class="logo__studio">Studio</span></a>
-            
-                <ul class="site-nav list">
-                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a></li>
-                    <li class="site-nav__item"><a class="site-nav__link"
-                            href="./portfolio.html">Портфоліо</a></li>
-                    <li class="site-nav__item"><a class="site-nav__link" href="/contact">Контакти</a></li>
-                </ul>
 
                 <button type="button" class="menu-toggle js-open-menu"
                 aria-expanded="false"
                 data-menu-button>
-                    <svg class="site-contact__icon" width="40px"
-                    height="40px"
-                    aria-controls="menu-container"
-                    aria-label="Перемикач мобільного меню">
-                        <use class="icon-cross" href="./images/symbol-defs.svg#icon-smartphone">
+                    <svg class="menu-toggle__icon"                  width="40px"
+                        height="40px"
+                        aria-controls="menu-container"
+                        aria-label="Перемикач мобільного меню">
+                        <use class="icon-menu" href="./images/symbol-menu-container.svg#icon-menu_40px">
                         </use>
-                        <use class="icon-menu" href="./images/symbol-defs.svg#icon-envelope">
-                        </use>
+                        
+                    </svg>
                 </button>
                 <div class="menu-container js-menu-container" id="menu-container" data-menu>
-                    <div class="navigation">                                       </div>
-                    <div class="contacts">
+                    <button type="button" class="menu-toggle menu-toggle--colorise js-close-menu" aria-expanded="false" data-menu-button>
+                        <svg class="menu-toggle__icon" width="40px" height="40px" aria-controls="menu-container"
+                            aria-label="Перемикач мобільного меню">
+                        
+                        <use class="icon-menu" href="./images/symbol-menu-container.svg#icon-close_40px">
+                        </use>
+                        </svg>
+                    </button>
 
+                    <div class="navigation"> 
+                        <ul class="site-nav list">
+                            <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a></li>
+                            <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
+                            <li class="site-nav__item"><a class="site-nav__link" href="/contact">Контакти</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contacts">
+                        <ul class="site-contact list">
+                        
+                            <li class="site-contact__item">
+                                <a class="site-contact__link" href="mailto:info@devstudio.com">
+                                    <svg class="site-contact__icon" width="16px" height="12px">
+                                        <use href="./images/symbol-defs.svg#icon-envelope">
+                                        </use>
+                                    </svg>
+                                    <span class="site-contact__mail">info@devstudio.com</span>
+                                </a>
+                            </li>
+                        
+                            <li class="site-contact__item"><a class="site-contact__link" href="tel:+380961111111">
+                                    <svg class="site-contact__icon" width="10px" height="16px">
+                                        <use href="./images/symbol-defs.svg#icon-smartphone">
+                                        </use>
+                                    </svg>
+                                    <span class="site-contact__fone">+38 096 111 11 11</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="social-netwok">
+                        <!-- social network -->
+                        <ul class="social-list">
+                            <!-- instagram -->
+                            <li class="social-list__item">
+                                <a class="social-list__links" href="https://www.instagram.com/" target="_blank">Instagram
+                                </a>
+                                <!-- twitter -->
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__links" href="https://twitter.com/" target="_blank">Twitter
+                                </a>
+                            </li>
+                            <!-- facebook -->
+                            <li class="social-list__item">
+                                <a class="social-list__links" href="https://www.facebook.com/" target="_blank">Facebook
+                                </a>
+                            </li>
+                            <!-- linkedin -->
+                            <li class="social-list__item">
+                                <a class="social-list__links" href="https://www.linkedin.com/" target="_blank">LinkedIn
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
     
-            <ul class="site-contact list">
-                
-                <li class="site-contact__item">
-                    <a class="site-contact__link" href="mailto:info@devstudio.com">
-                    <svg class="site-contact__icon" width="16px" height="12px">
-                        <use href="./images/symbol-defs.svg#icon-envelope">
-                        </use>
-                    </svg>info@devstudio.com
-                    </a>    
-                </li>
-
-                <li class="site-contact__item"><a class="site-contact__link" href="tel:+380961111111">
-                <svg class="site-contact__icon" width="10px" height="16px">
-                    <use href="./images/symbol-defs.svg#icon-smartphone">
-                    </use>
-                </svg>+38 096 111 11 11
-                </a>
-            </li>
-            </ul>
+            
         </div>
     </header>
     <main>
 
-        <!--Hero-->
+<!--Hero-->
 <section  class="hero">
     <h1 class="hero__title">Ефективні рішення для <br /> вашого бізнесу</h1>
     <button class="button" type="button" data-modal-open>
@@ -169,11 +206,11 @@
                     <div class="work__container">
                         <img class="work__image"
                         srcset="
-                        images/img/desktop/Desktop-applications-370.jpg 370w,
-                        images/img/desktop/Desktop-applications-640.jpg 640w
+                        images/img/desktop/Desktop-applications-370.jpg 1x,
+                        images/img/desktop/Desktop-applications-640.jpg 2x
                         "
                         src="images/img/desktop/Desktop-applications-370.jpg" alt="робота на клавіатурі перед монітором"
-                        sizes="min-width: 1200px) 25vw"
+                        sizes="(min-width: 1200px) 25vw"
                         >
                         <p class="work__label">Десктопні додатки</p>
                     </div>
@@ -182,11 +219,11 @@
                 <li class="work__item">
                     <div class="work__container">
                         <img class="work__image"
-                         srcset="images/img/mobile/Mobile-applications-370.jpg 370w,
-                         images/img/mobile/Mobile-applications-640.jpg 640w
+                         srcset="images/img/mobile/Mobile-applications-370.jpg 1x,
+                         images/img/mobile/Mobile-applications-640.jpg 2x
                          "
                          src="images/img/mobile/Mobile-applications-370.jpg" alt="робота на телефоны"
-                         sizes="min-width: 1200px) 25vw"
+                         sizes="(min-width: 1200px) 25vw"
                          >
                         <p class="work__label">Мобільні додатки</p>
                     </div>
@@ -195,11 +232,11 @@
                 <li class="work__item">
                     <div class="work__container">
                         <img class="work__image"
-                        srcset="images/img/design/Design-solutions-370.jpg 370w,
-                         images/img/design/Design-solutions-640.jpg 640w
+                        srcset="images/img/design/Design-solutions-370.jpg 1x,
+                         images/img/design/Design-solutions-640.jpg 2x
                          "
                         src="images/img/design/Design-solutions-370.jpg" alt="робота на планшеті"
-                        sizes="min-width: 1200px) 25vw"
+                        sizes="(min-width: 1200px) 25vw"
                         >
                         <p class="work__label">Дизайнерські рішення</p>
                                 </div>
@@ -224,14 +261,14 @@
                     <li class="team__card">
                         <img class="team__image"
                         srcset="
-                        images/img/product-designer/product-designer-270.jpg 270w,
-                        images/img/product-designer/product-designer-354.jpg 354w,
-                        images/img/product-designer/product-designer-450.jpg 450w,images/img/product-designer/product-designer-540.jpg 540w,
-                        images/img/product-designer/product-designer-708.jpg 708w,
-                        images/img/product-designer/product-designer-900.jpg 900w
+                        images/img/product-designer/product-designer-270.jpg 1x,
+                        images/img/product-designer/product-designer-354.jpg 2x,
+                        images/img/product-designer/product-designer-450.jpg 1x,images/img/product-designer/product-designer-540.jpg 2x,
+                        images/img/product-designer/product-designer-708.jpg 1x,
+                        images/img/product-designer/product-designer-900.jpg 2x
                         "
                         src="images/img/product-designer/product-designer-450.jpg" alt="робота на клавіатурі перед монітором"
-                        sizes="min-width: 1200px) 25vw, min-width: 768px) 50vw, 100vw">
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
                         <h3 class="team__name">Ігор Дем'яненко</h3>
                         <p class="team__position">Product Designer</p>
                         <!-- social network -->
@@ -278,14 +315,14 @@
                     <!-- Team card 2 -->
                     <li class="team__card">
                         <img class="team__image" srcset="
-                        images/img/frontend-developer/frontend-developer-270.jpg 270w,
-                        images/img/frontend-developer/frontend-developer-354.jpg 354w,
-                        images/img/frontend-developer/frontend-developer-450.jpg 450w,images/images/img/frontend-developer/frontend-developer-540.jpg 540w,
-                        images/img/frontend-developer/frontend-developer-708.jpg 708w,
-                        images/img/frontend-developer/frontend-developer-900.jpg 900w
+                        images/img/frontend-developer/frontend-developer-270.jpg 1x,
+                        images/img/frontend-developer/frontend-developer-354.jpg 2x,
+                        images/img/frontend-developer/frontend-developer-450.jpg 1x,images/images/img/frontend-developer/frontend-developer-540.jpg 2x,
+                        images/img/frontend-developer/frontend-developer-708.jpg 1x,
+                        images/img/frontend-developer/frontend-developer-900.jpg 2x
                         "
                         src="images/img/frontend-developer/frontend-developer-450.jpg"
-                        alt="робота на клавіатурі перед монітором" sizes="min-width: 1200px) 25vw, min-width: 768px) 50vw, 100vw">
+                        alt="робота на клавіатурі перед монітором" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
                         <h3 class="team__name">Ольга Рєпіна</h3>
                         <p class="team__position">Frontend Developer</p>
                         <!-- social network -->
@@ -332,13 +369,13 @@
                     <!-- Team card 3 -->
                     <li class="team__card">
                         <img class="team__image" srcset="
-                        images/img/marketing/marketing-354.jpg 354w,
-                        images/img/marketing/marketing-450.jpg 450w,images/
-                        images/img/marketing/marketing-708.jpg 708w,
-                        images/img/marketing/marketing-900.jpg 900w
+                        images/img/marketing/marketing-354.jpg 1x,
+                        images/img/marketing/marketing-450.jpg 2x,images/
+                        images/img/marketing/marketing-708.jpg 1x,
+                        images/img/marketing/marketing-900.jpg 2x
                         "
                         src="images/img/marketing/marketing-450.jpg"
-                        alt="робота на клавіатурі перед монітором" sizes="min-width: 1200px) 25vw, min-width: 768px) 50vw, 100vw">
+                        alt="робота на клавіатурі перед монітором" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
                         <h3 class="team__name">Микола Тарасов</h3>
                         <p class="team__position">Marketing</p>
 <!-- social network -->
@@ -385,14 +422,14 @@
                     <!-- Team card 4 -->
                     <li class="team__card">
                         <img class="team__image" srcset="
-                        images/img/ui-designer/ui-designer-270.jpg 270w,
-                        images/img/ui-designer/ui-designer-354.jpg 354w,
-                        images/img/ui-designer/ui-designer-450.jpg 450w,images/images/img/ui-designer/ui-designer-540.jpg 540w,
-                        images/img/ui-designer/ui-designer-708.jpg 708w,
-                        images/img/ui-designer/ui-designer-900.jpg 900w
+                        images/img/ui-designer/ui-designer-270.jpg 1x,
+                        images/img/ui-designer/ui-designer-354.jpg 2x,
+                        images/img/ui-designer/ui-designer-450.jpg 1x,images/images/img/ui-designer/ui-designer-540.jpg 2x,
+                        images/img/ui-designer/ui-designer-708.jpg 1x,
+                        images/img/ui-designer/ui-designer-900.jpg 2x
                         "
                         src="images/img/ui-designer/ui-designer-450.jpg"
-                        alt="робота на клавіатурі перед монітором" sizes="min-width: 1200px) 25vw, min-width: 768px) 50vw, 100vw">
+                        alt="робота на клавіатурі перед монітором" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
                         <h3 class="team__name">Михайло Єрмаков</h3>
                         <p class="team__position">UI Designer</p>
                         <!-- social network -->
@@ -514,7 +551,7 @@
             <div class="list">
 
 <div class="footer-list">
-<!-- Logo - address -->
+    <!-- Logo - address -->
 <div class="footer-container">
 
     <a class="logo logo--indentation" href="./index.html"><span class="logo__web">Web</span><span
@@ -533,7 +570,7 @@
     </address>
 </div>
 
-<!-- Social network Footer-->
+    <!-- Social network Footer-->
 <div class="socials">
 
     <p class="socials__title">

@@ -27,7 +27,8 @@ textarea {
 
 .container {
    
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
 
     @media screen and (min-width: $mobile) {
@@ -39,14 +40,11 @@ textarea {
     }
     @media screen and (min-width: $desktop) {
             width: $desktop;
-            max-width: 1200px;
                 padding-left: 15px;
                 padding-right: 15px;
                 
-                
 }
 }
-
 }
 
 .container--flex {
@@ -55,14 +53,15 @@ textarea {
             display: flex;
         }
 
-    @media screen and (min-width: $desktop) {
-          
-            }
     
 }
 
 .container ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -78,13 +77,12 @@ textarea {
             align-items: baseline;
         }
 
-        
-    
 }
 
 .section {
     padding-bottom: 60px;
     padding-top: 60px;
+  
 
     @media screen and (min-width: $desktop) {
             padding-bottom: 94px;

@@ -1,5 +1,5 @@
 .page-header {
-position: relative;
+    position: relative;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: $border-bottom-color;
@@ -9,6 +9,10 @@ position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (min-width: $tablet) {
+            align-items: baseline;
+        }
     
 }
 // Mobile menu
@@ -17,6 +21,19 @@ position: relative;
     margin: 0;
     padding: 0;
     border: none;
+    background-color: $background-color;
+
+&.menu-toggle--colorise {
+        position: absolute;
+        left: 93%;
+        top: 1%;    
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: $link-color;
+        }
+}
 
     @media screen and (min-width: $tablet) {
             display: none;
@@ -31,24 +48,29 @@ position: relative;
             }
 
     &.is-open .icon-menu {
-        display: block;
+        // display: block;
+        display: none;
     }
+
+    &__icon {
+        background-color: $background-color;
+        margin-right: 15px; 
+    }
+
 }
+
 .menu-container {
     
-    
-    padding: 40px;
-    // height: 796px;
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-    background-color: blue;
-
     @media screen and (max-width: 767px) {
-            display: none;
-            position: absolute;
-            
-                top: 100%;
+                display: none;
+                padding: 0 40px 48px;
+                height: 796px;
+                text-align: left;
+                font-size: 40px;
+                background-color: $background-color;
+                position: absolute;
+
+                top: 0;
                 left: 0;
                 width: 100%;
 
@@ -61,20 +83,39 @@ position: relative;
             display: flex;
             flex-grow: 1;
             justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            padding: 0;
         }
 
-    
-}
-
-.navigation, .contacts {
-    height: 40px;
-    width: 50px;
 }
 
 .navigation {
-outline: 1px solid teal;
+
+margin-bottom: 300px;
+margin-top: 50px;
+
+@media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
 }
 
 .contacts {
-outline: 1px solid rgb(175, 226, 23);
+    margin-bottom: 64px;
+    @media screen and (min-width: $tablet) {
+            margin-bottom: 0;
+        }
+}
+
+.social-netwok {
+   
+        font-size: 18px;
+        line-height: 1.2;
+        
+
+    @media screen and (min-width: $tablet) {
+            display: none;
+        }
+
 }
