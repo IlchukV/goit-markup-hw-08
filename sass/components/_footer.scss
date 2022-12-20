@@ -2,6 +2,11 @@
     background-color: $footer-portfolio-color;
     padding-bottom: 60px;
     padding-top: 60px;
+    width: 480px;
+
+    @media screen and (min-width: $mobile) {
+            width: 100%;
+        }
 }
 
 .footer-list {

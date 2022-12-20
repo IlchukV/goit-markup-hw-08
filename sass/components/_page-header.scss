@@ -25,7 +25,7 @@
 
 &.menu-toggle--colorise {
         position: absolute;
-        left: 93%;
+        left: 92%;
         top: 1%;    
         cursor: pointer;
 
@@ -35,10 +35,6 @@
         }
 }
 
-    @media screen and (min-width: $tablet) {
-            display: none;
-        }
-    
     & .icon-cross {
         display: none;
             }
@@ -55,7 +51,12 @@
     &__icon {
         background-color: $background-color;
         margin-right: 15px; 
+        fill: currentColor;
     }
+
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
 
 }
 
@@ -63,17 +64,18 @@
     
     @media screen and (max-width: 767px) {
                 display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+
                 padding: 0 40px 48px;
+                width: 480px;
                 height: 796px;
+
                 text-align: left;
                 font-size: 40px;
                 background-color: $background-color;
-                position: absolute;
-
-                top: 0;
-                left: 0;
-                width: 100%;
-
+                
                 &.is-open {
                         display: block;
                     }
@@ -84,6 +86,7 @@
             flex-grow: 1;
             justify-content: space-between;
             align-items: center;
+            
             height: 100%;
             padding: 0;
         }

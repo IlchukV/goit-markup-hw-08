@@ -1,5 +1,5 @@
 .checkbox {
-    display: flex;
+    
     align-items: center;
     justify-content: center;
 
@@ -7,6 +7,7 @@
 &__input {
     /* Візуально приховуємо чекбокс */
     position: absolute;
+    flex-wrap: wrap;
     width: 1px;
     height: 1px;
     margin: -1px;

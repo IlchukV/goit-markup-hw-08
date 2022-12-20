@@ -31,17 +31,17 @@ textarea {
     margin-right: auto;
     align-items: center;
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: 767px) {
           width: $mobile;
 
     @media screen and (min-width: $tablet) {
             width: $tablet;
-            
+            padding-left: 15px;
+            padding-right: 15px;
     }
     @media screen and (min-width: $desktop) {
             width: $desktop;
-                padding-left: 15px;
-                padding-right: 15px;
+                
                 
 }
 }

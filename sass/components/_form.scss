@@ -11,7 +11,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-
+// width: 100%;
     text-align: left;
 }
 
@@ -41,8 +41,9 @@
     margin: 0;
     padding: 6px 35px;
     margin-bottom: 10px;
-
+width: 100%;
     height: 40px;
+    
 
     border: 1px solid $border-collor;
     border-radius: 4px;
