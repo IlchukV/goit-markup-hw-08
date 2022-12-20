@@ -3,6 +3,8 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: $border-bottom-color;
+
+   
 }
 
 .nav {
@@ -12,6 +14,7 @@
 
     @media screen and (min-width: $tablet) {
             align-items: baseline;
+            // width: $tablet;
         }
     
 }
