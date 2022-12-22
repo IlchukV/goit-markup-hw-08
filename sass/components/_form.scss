@@ -1,11 +1,5 @@
 .form {
-    min-width: 450px;
-    min-height: 609px;
-
-    @media screen and (min-width: $desktop) {
-            min-width: 528px;
-            min-height: 581px
-        }
+   
         
 &__field {
 display: -webkit-box;
@@ -22,7 +16,7 @@ display: -webkit-box;
 &__icon {
     position: absolute;
     left: 15px;
-    top: 42px;
+    top: 33px;
 }
 
 &__comment {

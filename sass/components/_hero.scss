@@ -2,57 +2,59 @@
   
     margin: 0 auto;
     height: 400px;
-    width: 100%;
+    width: 480px;
     
-    padding-top: 118px;
+    padding: 118px 60px;
     text-align: center;
 
     background-repeat: no-repeat;
     background-color: $footer-portfolio-color;
     background-position: center;
-        background-size: 100% 400px;
+        background-size: 480px 400px;
     background-image: linear-gradient(to right,
             $hero-background-image),
-        url("../images/img/header/header480.jpg");
+        url("/images/img/header/header480.jpg");
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             .hero {
-                background-image: url('../images/img/header/header480@2x.jpg');
+                background-image: url('/images/img/header/header480@2x.jpg');
             }
         }
 
         @media screen and (min-width: $tablet) {
+            padding: 118px 204px;
                 height: 400px;
                 width: 768px;
                 background-size: 768px 400px;
                 background-image: linear-gradient(to right,
                             $hero-background-image),
-                        url('../images/img/header/header768.jpg');
+                        url('/images/img/header/header768.jpg');
                 
                     @media (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
                     (min-resolution: 2dppx) {
                         .hero {
-                            background-image: url('../images/img/header/header768@2x.jpg');
+                            background-image: url('/images/img/header/header768@2x.jpg');
                         }
                     }
             }
 
         @media screen and (min-width: $desktop) {
+            padding: 200px 452px;
             width: 1600px; 
             height: 600px;
             background-size: 1600px 600px;
             background-image: linear-gradient(to right,
                         $hero-background-image),
-                    url('../images/img/header/header1200.jpg');
+                    url('/images/img/header/header1200.jpg');
             
                 @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                     .hero {
-                        background-image: url('../images/img/header/header1200@2x.jpg');
+                        background-image: url('/images/img/header/header1200@2x.jpg');
                     }
                 }
             }
