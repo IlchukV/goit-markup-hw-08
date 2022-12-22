@@ -1,5 +1,7 @@
 .checkbox {
-    
+    display: -webkit-box;
+    display: -ms-flexbox;
+       display: flex;
     align-items: center;
     justify-content: center;
 
@@ -23,6 +25,11 @@
 
     width: 15px;
     height: 15px;
+
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
     border: 2px solid $text-color;
     border-radius: 4px;
 }
