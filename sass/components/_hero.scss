@@ -1,10 +1,10 @@
 .hero {
   
     margin: 0 auto;
+    padding: 118px 60px;
+
     height: 400px;
     width: 480px;
-    
-    padding: 118px 60px;
     text-align: center;
 
     background-repeat: no-repeat;
@@ -42,21 +42,22 @@
             }
 
         @media screen and (min-width: $desktop) {
+            
             padding: 200px 452px;
             width: 1600px; 
             height: 600px;
             background-size: 1600px 600px;
             background-image: linear-gradient(to right,
                         $hero-background-image),
-                    url('/images/img/header/header1200.jpg');
+                    url("/images/img/header/header1200.jpg");
             
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    .hero {
-                        background-image: url('/images/img/header/header1200@2x.jpg');
-                    }
-                }
+                // @media (min-device-pixel-ratio: 2),
+                // (min-resolution: 192dpi),
+                // (min-resolution: 2dppx) {
+                //     .hero {
+                //         background-image: url('/images/img/header/header1200@2x.jpg');
+                //     }
+                // }
             }
 
 

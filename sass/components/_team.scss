@@ -1,9 +1,13 @@
 .teams {
     padding-bottom: 60px;
     padding-top: 60px;
-    // width: 100%;
-    
+    width: 480px;
     background-color: $backgraund-team-color;
+
+    @media screen and (min-width: $mobile) {
+            width: 100%;
+        }
+    
 
     @media screen and (min-width: $desktop) {
             padding-bottom: 94px;
@@ -26,7 +30,10 @@
     margin: 15px;
     width: 450px;
     // width: calc(100% - 2 * 15px) / 1;
-    
+    background-color: $background-color;
+    box-shadow: 0px 1px 3px $box-shadow, 0px 1px 1px $drop-shadow-color, 0px 2px 1px $box-shadow-modal;
+    border-radius: 0px 0px 4px 4px;
+
     @media screen and (min-width: $tablet) {
        width: 354px;
         }
@@ -34,12 +41,6 @@
     @media screen and (min-width: $desktop) {
             width: 270px;
         }
-
-    background-color: $background-color;
-    box-shadow: 0px 1px 3px $box-shadow, 0px 1px 1px $drop-shadow-color, 0px 2px 1px $box-shadow-modal;
-    border-radius: 0px 0px 4px 4px;
-
-
 }
 
 &__image {

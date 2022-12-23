@@ -135,6 +135,13 @@ a {
   border-bottom-style: solid;
   border-bottom-color: #ECECEC;
 }
+@media screen and (min-width: 768px) {
+  .page-header {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
 .nav {
   display: -webkit-box;
@@ -146,13 +153,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media screen and (min-width: 768px) {
-  .nav {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
 }
 
 .menu-toggle {
@@ -247,6 +247,7 @@ a {
 @media screen and (min-width: 768px) {
   .contacts {
     margin-bottom: 0;
+    padding-right: 0;
   }
 }
 
@@ -375,7 +376,7 @@ a {
     display: block;
     padding-top: 21px;
     padding-left: 0;
-    margin-left: 80px;
+    margin-left: 65px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -480,9 +481,9 @@ a {
 
 .hero {
   margin: 0 auto;
+  padding: 118px 60px;
   height: 400px;
   width: 480px;
-  padding: 118px 60px;
   text-align: center;
   background-repeat: no-repeat;
   background-color: #2F303A;
@@ -519,11 +520,6 @@ a {
     background-size: 1600px 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0))), url("/images/img/header/header1200.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0)), url("/images/img/header/header1200.jpg");
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: url("/images/img/header/header1200@2x.jpg");
   }
 }
 .hero__title {
@@ -763,7 +759,13 @@ a {
 .teams {
   padding-bottom: 60px;
   padding-top: 60px;
+  width: 480px;
   background-color: #F5F4FA;
+}
+@media screen and (min-width: 480px) {
+  .teams {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .teams {
