@@ -19,8 +19,6 @@ body {
 
 }
     
-
-
 textarea {
     resize: none;
 }
@@ -33,8 +31,8 @@ textarea {
 
     @media screen and (max-width: 767px) {
           width: 480px;
-        padding-left: 15px;
-        padding-right: 15px;
+        // padding-left: 15px;
+        // padding-right: 15px;
         }
     
 
@@ -45,8 +43,6 @@ textarea {
 
     @media screen and (min-width: $desktop) {
             width: 1200px;
-          
-            
 }
 }
 

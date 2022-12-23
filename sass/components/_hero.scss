@@ -1,32 +1,43 @@
 .hero {
-  
+    min-width: 480px;
+    
+    @media screen and (min-width: $mobile) {
+        width: 100%;
+    }
+}
+
+.hero-container {
+    
     margin: 0 auto;
     padding: 118px 60px;
-
-    height: 400px;
-    width: 480px;
     text-align: center;
 
     background-repeat: no-repeat;
-    background-color: $footer-portfolio-color;
-    background-position: center;
+        background-color: $footer-portfolio-color;
+        background-position: center;
         background-size: 480px 400px;
-    background-image: linear-gradient(to right,
-            $hero-background-image),
-        url("/images/img/header/header480.jpg");
-
-    @media (min-device-pixel-ratio: 2),
+        background-image: linear-gradient(to right,
+                $hero-background-image),
+            url("/images/header480.jpg");
+    
+        @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             .hero {
-                background-image: url('/images/img/header/header480@2x.jpg');
+                background-image: url("/images/header480@2x.jpg");
             }
         }
+    
+    @media screen and (min-width: $mobile) {
+        
+    // height: 400px;
+    max-width: 480px;
+    }
 
         @media screen and (min-width: $tablet) {
             padding: 118px 204px;
                 height: 400px;
-                width: 768px;
+                max-width: 768px;
                 background-size: 768px 400px;
                 background-image: linear-gradient(to right,
                             $hero-background-image),
@@ -43,21 +54,21 @@
 
         @media screen and (min-width: $desktop) {
             
-            padding: 200px 452px;
-            width: 1600px; 
+            padding: 200px 0;
+            max-width: 1600px; 
             height: 600px;
             background-size: 1600px 600px;
             background-image: linear-gradient(to right,
                         $hero-background-image),
                     url("/images/img/header/header1200.jpg");
             
-                // @media (min-device-pixel-ratio: 2),
-                // (min-resolution: 192dpi),
-                // (min-resolution: 2dppx) {
-                //     .hero {
-                //         background-image: url('/images/img/header/header1200@2x.jpg');
-                //     }
-                // }
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .hero {
+                        background-image: url('/images/img/header/header1200@2x.jpg');
+                    }
+                }
             }
 
 
