@@ -140,11 +140,6 @@ a {
             align-items: baseline;
   }
 }
-@media screen and (min-width: 1200px) {
-  .page-header {
-    padding-left: 15px;
-  }
-}
 
 .nav {
   display: -webkit-box;
@@ -156,6 +151,11 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    padding-left: 15px;
+  }
 }
 
 .menu-toggle {

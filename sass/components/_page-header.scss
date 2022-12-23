@@ -8,16 +8,18 @@
             align-items: baseline;
     
         }
-                @media screen and (min-width: $desktop) {
-                    padding-left: 15px;
-        
-                }
+                
 }
 
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (min-width: $desktop) {
+            padding-left: 15px;
+    
+        }
 
    
 }
