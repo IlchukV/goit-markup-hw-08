@@ -1,8 +1,7 @@
 .form {
    
-        
 &__field {
-display: -webkit-box;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
@@ -10,6 +9,7 @@ display: -webkit-box;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+
     text-align: left;
 }
 
@@ -22,9 +22,9 @@ display: -webkit-box;
 &__comment {
     display: flex;
     flex-direction: column;
-    text-align: left;
     margin-bottom: 20px;
 
+    text-align: left;
 }
 
 .comment__area {
@@ -39,9 +39,9 @@ display: -webkit-box;
     margin: 0;
     padding: 6px 35px;
     margin-bottom: 10px;
+
     height: 40px;
     
-
     border: 1px solid $border-collor;
     border-radius: 4px;
     cursor: pointer;
@@ -64,8 +64,8 @@ display: -webkit-box;
 
     font-weight: 400;
     font-size: 12px;
-        line-height: 1.2;
-        letter-spacing: 0.01em;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
 }
 
 &__field input::placeholder {

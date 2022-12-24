@@ -9,15 +9,16 @@
 .hero-container {
     margin: 0 auto;
     padding: 118px 60px;
+
     text-align: center;
     max-width: 480px;
     
     background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-color: $hero-background-image;
+    background-position: center;
+    background-size: cover;
+    background-color: $hero-background-image;
     
-        @media screen and (max-width: 767px) {
+            @media screen and (max-width: 767px) {
             background-image: linear-gradient(to right, $hero-background-image,
                     $hero-background-image),
                 url('../images/header480.jpg');
@@ -35,8 +36,10 @@
         }
     
         @media screen and (min-width: $tablet) {
-    padding: 118px 0;
-    max-width: 768px;
+            padding: 118px 0;
+
+            max-width: 768px;
+
             background-image: linear-gradient(to right, $hero-background-image,
                     $hero-background-image),
                 url('../images/header768.jpg');
@@ -54,9 +57,11 @@
         }
     
         @media screen and (min-width: $desktop) {
-            padding: 200px 0;       
+            padding: 200px 0; 
+
             max-width: 1600px;
             height: 600px;
+
             background-image: linear-gradient(to right, $hero-background-image,
                     $hero-background-image),
                 url('../images/header1200.jpg');
@@ -87,8 +92,8 @@
 
     @media screen and (min-width: $desktop) {
             font-weight: 900;
-                font-size: 44px;
-                line-height: 1.36;
+            font-size: 44px;
+            line-height: 1.36;
         }
 }
 }

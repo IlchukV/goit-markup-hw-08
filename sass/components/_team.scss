@@ -1,14 +1,15 @@
 .teams {
     padding-bottom: 60px;
     padding-top: 60px;
+
     width: 480px;
+
     background-color: $backgraund-team-color;
 
     @media screen and (min-width: $mobile) {
             width: 100%;
         }
-    
-
+            
     @media screen and (min-width: $desktop) {
             padding-bottom: 94px;
                 padding-top: 94px;
@@ -18,18 +19,14 @@
 .team  {
 
     display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0 0;    
-
-    // @media screen and (min-width: $desktop) {
-    //         // margin: -15px;
-    //     }
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 0;    
 
 &__card {
     margin: 15px;
     width: 450px;
-    // width: calc(100% - 2 * 15px) / 1;
+    
     background-color: $background-color;
     box-shadow: 0px 1px 3px $box-shadow, 0px 1px 1px $drop-shadow-color, 0px 2px 1px $box-shadow-modal;
     border-radius: 0px 0px 4px 4px;
@@ -45,28 +42,34 @@
 
 &__image {
     display: block;
+
     width: 100%;
     height: auto
 }
 
 &__name {
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-top: 30px;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+
     color: $text-color;
-    margin-bottom: 10px;
-    margin-top: 0;
-    padding-top: 30px;
+    
 }
 
 &__position {
+    margin-bottom: 16px;
+    margin-top: 0;
+
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+    
     color: $text-main-color;
-    margin-bottom: 16px;
-    margin-top: 0;
+    
 }
 }

@@ -1,12 +1,14 @@
 .progect {
     
     display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0 0;
-        margin: -15px;
+    flex-wrap: wrap;
+    padding: 0 0;
+    margin: -15px;
 
-    @media screen and (min-width: $tablet) {
+    justify-content: center;
+        
+
+        @media screen and (min-width: $tablet) {
         justify-content: flex-start;
         }
     
@@ -17,9 +19,13 @@
 .project__item {
 
     margin: 15px;
+
+    width: calc(100% - 2 * 15px) / 1;
+
+    box-sizing: border-box;
+    background: $background-color;
     
-        width: calc(100% - 2 * 15px) / 1;
-    
+            
         @media screen and (min-width: $tablet) {
             width: 354px;
         }
@@ -28,9 +34,6 @@
             width: 370px;
         }
 
-
-    box-sizing: border-box;
-    background: $background-color;
 }
 
 .project__link {
@@ -48,6 +51,7 @@
     display: flex;
     position: relative;
     overflow: hidden;
+
     width: 100%;
     height: auto
 }
@@ -61,12 +65,11 @@
 
     width: 100%;
     height: 100%;
-
     font-size: 18px;
     line-height: 1.56;
+
     color: $background-color;
     background-color: $product-actions-color;
-
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -99,6 +102,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    
     color: $text-color;
 }
 

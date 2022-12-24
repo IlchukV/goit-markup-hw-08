@@ -1,14 +1,15 @@
 .checkbox {
     display: -webkit-box;
     display: -ms-flexbox;
-       display: flex;
+    display: flex;
+
     align-items: center;
     justify-content: center;
     font-size: 12px;
 
-
+/* Візуально приховуємо чекбокс */
 &__input {
-    /* Візуально приховуємо чекбокс */
+    
     position: absolute;
     flex-wrap: wrap;
     width: 1px;
@@ -28,9 +29,9 @@
     height: 15px;
 
     font-weight: 400;
-        font-size: 12px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
     border: 2px solid $text-color;
     border-radius: 4px;
 }

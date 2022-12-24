@@ -10,13 +10,14 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: $background-color;
+    
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    font-family: 'Roboto', sans-serif;
+        
+    background-color: $background-color;
     color: $text-main-color;
-
 }
     
 textarea {
@@ -31,8 +32,6 @@ textarea {
 
     @media screen and (max-width: 767px) {
           width: 480px;
-        // padding-left: 15px;
-        // padding-right: 15px;
         }
     
 
@@ -52,7 +51,6 @@ textarea {
             display: flex;
         }
 
-    
 }
 
 .container ul {
@@ -93,18 +91,23 @@ a {
 .teams__title,
 .customers__title {
 
+    margin-bottom: 30px;
+    margin-top: 0;
+
     font-weight: 700;
     font-size: 28px;
     line-height: 1.14;
     text-align: center;
+
     color: $text-color;
-    margin-bottom: 30px;
-    margin-top: 0;
+
 
     @media screen and (min-width: $desktop) {
-            font-size: 36px;
-                line-height: 1.2;
-                margin-bottom: 50px;
+        
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: 1.2;
         }
 }
 

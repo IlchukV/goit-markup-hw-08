@@ -21,13 +21,13 @@
     
         }
 
-   
 }
 // Mobile menu
 .menu-toggle {
     display: inline-flex;
     margin: 0;
     padding: 0;
+
     border: none;
     background-color: $background-color;
 
@@ -52,7 +52,6 @@
             }
 
     &.is-open .icon-menu {
-        // display: block;
         display: none;
     }
 
@@ -75,13 +74,13 @@
                 position: fixed;
                 top: 0;
                 left: 0;
-
                 padding: 0 40px 48px;
+
                 width: 100%;
                 height: 100%;
-                
                 text-align: left;
                 font-size: 40px;
+
                 background-color: $background-color;
                 
                 &.is-open {
@@ -89,28 +88,27 @@
                     }
     }
 
-
         @media screen and (min-width: $tablet) {
             display: flex;
             flex-grow: 1;
-            justify-content: space-between;
-            align-items: center;
+            padding: 0;
             
             height: 100%;
-            padding: 0;
+            justify-content: space-between;
+            align-items: center;
+           
         }
 
 }
 
 .navigation {
-
 margin-bottom: 300px;
 margin-top: 50px;
 
-@media screen and (min-width: $tablet) {
-        margin-bottom: 0;
-        margin-top: 0;
-    }
+    @media screen and (min-width: $tablet) {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
 }
 
 .contacts {
@@ -127,7 +125,6 @@ margin-top: 50px;
         font-size: 18px;
         line-height: 1.2;
         
-
     @media screen and (min-width: $tablet) {
             display: none;
         }

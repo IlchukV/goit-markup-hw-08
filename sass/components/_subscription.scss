@@ -1,9 +1,7 @@
 .subscription {
     display: block;
     
-
     @media screen and (min-width: $desktop) {
-            // display: flex;
                 margin-left: auto;
                 display: inline-block;
                 flex-direction: column;
@@ -32,8 +30,8 @@
 
     @media screen and (min-width: $desktop) {
             display: flex;
-                flex-direction: row;
-                align-items: baseline;
+            flex-direction: row;
+            align-items: baseline;
         }
     
 }
@@ -48,12 +46,11 @@
     justify-content: center;
     padding: 15px 16px; 
     margin: 20px auto;
+
     height: 50px;
     width: 450px;
     font-size: 16px;
-
     
-
     color: $background-color;
     background-color: $social-actions-color;
     border: 1px solid $border-social-actions-color;

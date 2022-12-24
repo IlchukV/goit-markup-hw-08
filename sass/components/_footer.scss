@@ -1,7 +1,9 @@
 .footer {
-    background-color: $footer-portfolio-color;
     padding: 60px 0;
+
     width: 480px;
+
+    background-color: $footer-portfolio-color;
 
     @media screen and (min-width: $mobile) {
             width: 100%;
@@ -15,7 +17,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        
         }
 
                 @media screen and (min-width: $desktop) {

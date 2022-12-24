@@ -29,10 +29,8 @@
         display: block;
         padding-top: 34px;
         padding-bottom: 30px;
-        
-           
+
         font-size: 14px;
-        
         }
 
 &:hover,
@@ -41,8 +39,9 @@
     }
 
 &.site-nav__link--current {
-            color: $link-color;
-            position: relative;
+    position: relative;
+    color: $link-color;
+            
     }
 
 &.site-nav__link--current::after {
@@ -67,4 +66,5 @@ display: none;
 }
 
 .site-nav .site-nav__item:not(:last-child) {
-    margin-right: 50px}
+    margin-right: 50px;
+}
