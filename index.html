@@ -37,6 +37,7 @@
                         
                     </svg>
                 </button>
+                
                 <div class="menu-container js-menu-container" id="menu-container" data-menu>
                     <button type="button" class="menu-toggle menu-toggle--colorise js-close-menu" aria-expanded="false" data-menu-button>
                         <svg class="menu-toggle__icon" width="40px" height="40px" aria-controls="menu-container"
@@ -51,7 +52,7 @@
                         <ul class="site-nav list">
                             <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a></li>
                             <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
-                            <li class="site-nav__item"><a class="site-nav__link" href="/contact">Контакти</a></li>
+                            <li class="site-nav__item"><a class="site-nav__link" href="#contact">Контакти</a></li>
                         </ul>
                     </div>
 
@@ -553,7 +554,7 @@
 
 <!--  Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container" id="contact">
             <div class="list">
 
 <div class="footer-list">
@@ -660,7 +661,7 @@
         
                     <div class="form__field">
                         <label for="name">Ім'я</label>
-                        <input class="form__input" type="text" name="name" id="name">
+                        <input class="form__input" type="text" name="name" id="name" required>
                         <svg class="form__icon" width="12px" height="12px">
                             <use href="./images/icons.svg#icon-people">
                             </use>
@@ -670,7 +671,7 @@
         
                     <div class="form__field">
                         <label for="tel">Телефон</label>
-                        <input class="form__input" type="tel" name="tel" id="tel">
+                        <input class="form__input" type="tel" name="tel" id="tel" required>
                         <svg class="form__icon" width="13px" height="13px">
                             <use href="./images/icons.svg#icon-phone">
                             </use>
@@ -679,7 +680,7 @@
         
                     <div class="form__field">
                         <label for="email">Пошта</label>
-                        <input class="form__input" type="email" name="mail" id="email">
+                        <input class="form__input" type="email" name="mail" id="email" required>
                         <svg class="form__icon" width="15px" height="12px">
                             <use href="./images/icons.svg#icon-mail-2">
                             </use>
@@ -689,7 +690,7 @@
                     <div class="form__comment">
                         <label for="coment">Коментар</label>
                         <textarea class="comment__area" name="coment" id="coment" rows="6"
-                            placeholder="Введіть текст"></textarea>
+                            placeholder="Введіть текст" required></textarea>
                     </div>
 <!-- checkbox -->
                     <label class="checkbox">

@@ -23,7 +23,7 @@
                 <nav class="nav">
                     <a class="logo" href="./index.html"><span class="logo__web">Web</span><span
                             class="logo__studio">Studio</span></a>
-        
+        <!-- Mobile menu -->
                     <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" data-menu-button>
                         <svg class="menu-toggle__icon" width="40px" height="40px" aria-controls="menu-container"
                             aria-label="Перемикач мобільного меню">
@@ -32,6 +32,7 @@
         
                         </svg>
                     </button>
+                    
                     <div class="menu-container js-menu-container" id="menu-container" data-menu>
                         <button type="button" class="menu-toggle menu-toggle--colorise js-close-menu" aria-expanded="false"
                             data-menu-button>
@@ -48,7 +49,7 @@
                                 <li class="site-nav__item"><a class="site-nav__link"
                                         href="./index.html">Студія</a></li>
                                 <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфоліо</a></li>
-                                <li class="site-nav__item"><a class="site-nav__link" href="/contact">Контакти</a></li>
+                                <li class="site-nav__item"><a class="site-nav__link" href="#contact">Контакти</a></li>
                             </ul>
                         </div>
         
@@ -101,7 +102,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div>  
                 </nav>
         
         
@@ -119,27 +120,27 @@
 <div class="filter__container">
     <ul class="filter__list">
         <li class="filter__item">
-            <button type="button">
+            <button data-work-type="" class="button-set__button active" type="button">
                 Усі
             </button>
         </li>
         <li class="filter__item">
-            <button type="button">
+            <button data-work-type="website" class="button-set__button" type="button">
                 Веб-сайти
             </button>
         </li>
         <li class="filter__item">
-            <button type="button">
+            <button data-work-type="app" class="button-set__button" type="button">
                 Додатки
             </button>
         </li>
         <li class="filter__item">
-            <button type="button">
+            <button data-work-type="design" class="button-set__button" type="button">
                 Дизайн
             </button>
         </li>
         <li class="filter__item">
-            <button type="button">
+            <button data-work-type="marketing" class="button-set__button" type="button">
                 Маркетинг
             </button>
         </li>
@@ -151,7 +152,7 @@
                 <ul class="progect list">
                 
     <!-- projet 1 -->
-                    <li class="project__item">
+                    <li data-work-type="website" class="project__item">
                         <a class="project__link" href="">
                             <div class="project__box">
                                 <img src="images/technocrjak.jpg" alt="Зображення трьох людей на екрані ноутбука" >
@@ -174,7 +175,7 @@
                     </li>
                 
     <!-- projet 2 -->
-                    <li class="project__item">
+                    <li data-work-type="design" class="project__item">
                         <a class="project__link" href="">
                             <div class="project__box">
                                 <img src="images/neworlean.jpg" alt="двоє чоловіків грають в баскетбол">
@@ -196,7 +197,7 @@
                                             </li>
                 
     <!-- projet 3 -->
-                    <li class="project__item">
+                    <li data-work-type="app" class="project__item">
                         <a class="project__link" href="">
                             <div class="project__box">
                                 <img src="./images/seafood.jpg" alt="двоє чоловіків грають в баскетбол">
@@ -219,7 +220,7 @@
                     </li>
                 
     <!-- projet 4 -->
-                    <li class="project__item">
+                    <li data-work-type="marketing" class="project__item">
                         <a class="project__link" href="">
                             <div class="project__box">
                                 <img src="./images/prime.jpg" alt="Навушники">
@@ -242,7 +243,7 @@
                     </li>
                 
     <!-- projet 5 -->
-                    <li class="project__item">
+                    <li data-work-type="app" class="project__item">
                         <a class="project__link" href="">
                             <div class="project__box">
                                 <img src="./images/boxes.jpg" alt="Kt;Дві коробки лежать на підлозі">
@@ -265,7 +266,7 @@
                     </li>
                 
     <!-- projet 6 -->
-                    <li class="project__item">
+                    <li data-work-type="website" class="project__item">
                         <a class="project__link" href="">
                             <div class="project__box">
                                 <img src="./images/inspiration.jpg" alt="Дві коробки лежать на підлозі">
@@ -288,7 +289,7 @@
                     </li>
                 
     <!-- projet 7 -->
-                    <li class="project__item">
+                    <li data-work-type="design" class="project__item">
                         <a class="project__link" href="">
                             <div class="project__box">
                                 <img src="./images/edition.jpg" alt="Три фотографії на розгорнутому журналі">
@@ -312,7 +313,7 @@
                     </li>
                 
     <!-- projet 8 -->
-                    <li class="project__item">
+                    <li data-work-type="marketing" class="project__item">
                         <a class="project__link" href="">
                             <div class="project__box">
                                 <img src="./images/lab.jpg" alt="Етикетка з написом">
@@ -335,7 +336,7 @@
                     </li>
                 
     <!-- projet 9 -->
-                    <li class="project__item">
+                    <li data-work-type="app" class="project__item">
                         <a class="project__link" href="">
                             <div class="project__box">
                                 <img src="./images/business.jpg" alt="Дві руки на клавіатурі ноутбука">
@@ -364,7 +365,7 @@
         </main>
         <!--  Footer -->
         <footer class="footer">
-            <div class="container">
+            <div class="container" id="contact">
                 <div class="list">
         
                     <div class="footer-list">
@@ -520,5 +521,47 @@
                 </div>
             </div>
         </footer>
+        <!-- Mobile menu -->
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <button class="mobile-menu__button js-close-menu" type="button">
+                <svg width="40" height="40" aria-label="Кнопка мобільного меню">
+                    <use href="./images/icons.svg#icon-mobile-menu-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-nav">
+                <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="./index.html">Студія</a></li>
+                <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link mobile-menu-nav__link--current"
+                        href="./portfolio.html">Портфоліо</a></li>
+                <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="">Контакти</a></li>
+            </ul>
+            <ul class="mobile-menu-contact">
+                <li class="mobile-menu-contact__item"><a class="mobile-menu-contact__telephon" href="tel:+380961111111">+38 096
+                        111 11 11</a></li>
+                <li class="mobile-menu-contact__item"><a class="mobile-menu-contact__email"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-menu-social">
+                <li class="mobile-menu-social__item">
+                    <a class="mobile-menu-social__link" href="https://www.instagram.com" rel="noreferrer noopener"
+                        target="_blank" title="Instagram">Instagram</a>
+                </li>
+                <li class="mobile-menu-social__item">
+                    <a class="mobile-menu-social__link" href="https://twitter.com" rel="noreferrer noopener" target="_blank"
+                        title="Twitter">Twitter</a>
+                </li>
+                <li class="mobile-menu-social__item">
+                    <a class="mobile-menu-social__link" href="https://www.facebook.com" rel="noreferrer noopener"
+                        target="_blank" title="Facebook">Facebook</a>
+                </li>
+                <li class="mobile-menu-social__item">
+                    <a class="mobile-menu-social__link" href="https://www.linkedin.com" rel="noreferrer noopener"
+                        target="_blank" title="LinkedIn">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+        <script src="./js/filter.js"></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
+        
     </body>
 </html>
